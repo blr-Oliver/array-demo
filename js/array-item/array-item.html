@@ -1,0 +1,4 @@
+<h2 ng-class="{'range-start': item.rangeStart, 'range-end': item.rangeEnd}">
+  <span class="label" ng-class="{'label-danger': item.removed, 'label-success': item.added, 'label-info': !item.added && !item.removed}">{{item.value}}
+  <sub><del ng-if="item.oldIndex >= 0" ng-class="{'text-danger' : !item.removed, 'text-muted': item.removed}" ng-bind="item.oldIndex"></del> <span ng-if="item.index >= 0" class="text-muted" ng-bind="item.index"></span></sub></span>
+</h2>

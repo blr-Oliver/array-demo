@@ -1,0 +1,41 @@
+.range-start:before, .range-end:after {
+  font-size: 200%;
+  color: yellow;
+  vertical-align: top;
+  margin-bottom: -1em;
+  position: relative;
+  bottom: 0.3em;
+  padding: 0 2px;
+}
+
+.range-start:before {
+  float: left;
+  content: '[';
+}
+
+.range-end:after {
+  float: right;
+  content: ']';
+}
+
+input.user-code[type="number"]::-webkit-outer-spin-button, input.user-code[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input.user-code[type="number"] {
+  display: inline;
+  text-align: center;
+  font-weight: bold;
+  max-width: 2em;
+  -moz-appearance: textfield;
+}
+
+label code{
+  font-weight: normal;
+}
+
+.nav-tabs .action{
+  margin-left: 5px;
+  margin-top: 5px;
+}
